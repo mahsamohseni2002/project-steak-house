@@ -1,4 +1,19 @@
 @import'globals';
 
+#carousel-around{
+    height: 100vh;
+}
 
+ .dark::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  background: linear-gradient(to left, #c21500, #ffc500);
+    opacity: 0.6;
+    z-index: 1;
+ }
 
