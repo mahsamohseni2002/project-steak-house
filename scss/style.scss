@@ -1,7 +1,8 @@
 @import'globals';
 
+// _______________________________Carousel_Section___________________________________
+
 .carousel-item{
-//  background-image:linear-gradient(to left, #c21300ca, #ffc400ca ), url(./images/home-bg-slideshow3.jpg);
   height: 100vh;
   background-size: cover;
   background-position:center;
@@ -12,11 +13,73 @@
   align-items: center;
   color: white;
 }
+.hero-header{
+  font-size: 100px;
+}
 
-// .carousel-item h1{}
+.header-fade-up{
+  animation-name:fadeUp-header;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-timing-function:linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeUp-header {
+  0%{
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  20%{
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.p-header{
+  font-size: 20px;
+}
+
+.p-fade-up{
+  animation-name:fadeUp-p;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function:linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeUp-p {
+  0%{
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  20%{
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+// _______________________________//Carousel_Section___________________________________
 
 
-// .carousel-item p{}
+
   
 
 
