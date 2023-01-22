@@ -2,7 +2,7 @@
 
 // _______________________________Carousel_Section___________________________________
 
-.carousel-inner{
+.carousel-hero{
   position: relative;
   
 }
@@ -175,20 +175,28 @@
  #entire {
   padding: 0;
   margin: 0;
+  height: 100vh;
 
  }
 
-#card-section{
+ .gray-section{
   background-color: rgb(240,240,240);
+  padding: 150px 20px;
+  width: 100%;
+}
+.white-section{
   padding: 150px 50px;
   width: 100%;
-  
-
 }
 #navbar{
   background-color: $white;
   box-shadow: 0px 2px 8px 0px rgb(50 50 50 / 4%);
 }
+// #navbar-around{
+
+// }
+
+
 .item-link{
   color: #757575;
   font-size: 19px;
@@ -202,12 +210,8 @@
   color: #505050;
 
 }
-// .inner-card-section{
-//   border: 2px solid blue;
-  
 
-// }
-.card-header{
+.main-header{
   background-color: transparent;
   border: none;
   width: 100%;
@@ -231,17 +235,29 @@
 .aroundCards{
   margin-top: 100px;
 }
-// .row-cards{
-//   // border: 3px solid darkorange;
-  
- 
-// }
+
 .cards{
   text-align: center;
-  // border: 1px solid black;
   .inside-card{
     background-color: $white;
-    padding: 0px 60px 40px 60px;
+    padding: 0px 30px 40px 30px;
+  }
+  .cards-Header{
+    color: #444;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: $Montserrat-font;
+    font-weight: 400;
+  }
+  .cards-p{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+    margin-top: 20px;
+    color: #656565;
+    font-family: $Source-Sans-Pro-font;
+    font-weight: 300;
+   
   }
 }
 
@@ -279,6 +295,7 @@
   animation-timing-function:linear;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  visibility: visible;
 }
 @keyframes card-1 {
   0%{
@@ -361,7 +378,25 @@
   margin-top: -100px;
   margin-bottom: 40px;
 }
+.about-section{
+  margin-top: 70px;
+}
 
+.slide-1{
+  border: 1px solid black;
+  padding: 5px 20px;
+
+}
+
+.about-card{
+  width: 100% !important;
+  height: auto;
+  border: none;
+  img{
+    padding: 15px;
+    border: none;
+  }
+}
 
 
 
@@ -373,11 +408,16 @@
 
 @media (max-width: 992px) {
   .navbar-nav{
-    position: absolute;
     background-color: rgba(255, 255, 255, 0.61);
     width: 100%;
     
     
+  }
+  .cards{
+    margin-top: 100px;
+    // .inside-card{
+    //   padding: 0px 10px 10px 10px;
+    // }
   }
 }
 
