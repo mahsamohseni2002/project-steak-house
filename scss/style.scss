@@ -27,7 +27,7 @@
   font-size: 100px;
   letter-spacing: 0.2rem;
 }
-.carousel-item{
+.carousel-item-hero{
   height: 100vh;
   background-size: cover;
   background-position:center;
@@ -380,11 +380,17 @@
 }
 .about-section{
   margin-top: 70px;
+  .row{
+    padding: 0px;
+    margin: 0px;
+    
+  }
 }
 
 .slide-1{
-  border: 1px solid black;
-  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
 }
 
@@ -393,11 +399,35 @@
   height: auto;
   border: none;
   img{
-    padding: 15px;
     border: none;
+    padding: 0rem;
   }
 }
+.carousel-dots{
 
+}
+.carousel-text{
+  margin-top: 20px;
+}
+
+
+
+// _______________________________video_parallax___________________________________
+
+#video-parallax{
+  border: 1px solid firebrick;
+  background-image: url("/images/video-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.video-container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  
+}
+// _______________________________//video_parallax___________________________________
 
 
 
